@@ -2,16 +2,41 @@ package org.launchcode.java.demos.lsn4classes2;
 
 import java.util.ArrayList;
 
+
 public class Course {
+
     private String topic;
-    private Teacher instructor;
-    private ArrayList<Student> enrolledStudents;
+    private org.launchcode.java.demos.lsn3classes1.Teacher instructor;
+    private ArrayList<org.launchcode.java.demos.lsn3classes1.Student> enrolledStudents;
+    public Course(String topic, org.launchcode.java.demos.lsn3classes1.Teacher instructor, ArrayList enrolledStudents){
+        this.topic = topic;
+        this.instructor = instructor;
+        this.enrolledStudents = enrolledStudents;
 
-    // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather than
-    //  just the class fields.
+    }
 
+    public String getTopic() {
+        return topic;
+    }
 
-    // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
-    //  Course objects equal.
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
 
+    public org.launchcode.java.demos.lsn3classes1.Teacher getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(org.launchcode.java.demos.lsn3classes1.Teacher instructor) {
+        this.instructor = instructor;
+    }
+
+    public ArrayList<org.launchcode.java.demos.lsn3classes1.Student> getEnrolledStudents() {
+        return enrolledStudents;
+    }
+
+    public void setEnrolledStudents(ArrayList<org.launchcode.java.demos.lsn3classes1.Student> enrolledStudents) {
+        this.enrolledStudents = enrolledStudents;
+    }
 }
+
